@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDEC — Método del Entrenador Completo</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <div class="header-wrapper">
+        <!-- Top Bar (Azul) -->
+        <div class="top-bar">
+            <div class="top-bar__socials">
+                <a href="#" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.88a.88.88 0 1 1 0 1.76.88.88 0 0 1 0-1.76z"/></svg>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.56 31.56 0 0 0 0 12a31.56 31.56 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.84.55 9.38.55 9.38.55s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.56 31.56 0 0 0 24 12a31.56 31.56 0 0 0-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+                </a>
+                <a href="#" aria-label="Twitter / X">
+                    <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Header (Verde) -->
+        <header class="header" id="header">
+            <a href="#" class="header__logo">
+                <img src="assets/images/logo.png" alt="MDEC Logo">
+            </a>
+
+            <nav class="header__nav" id="nav">
+                <a href="#metodo">Método</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#testimonios">Testimonios</a>
+                <a href="#contacto" class="btn-cta btn-cta--dark">Empieza Ahora</a>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header>
+    </div>
+
+    <!-- ==================== HERO / PORTADA ==================== -->
+    <section class="hero">
+        <div class="hero__bg">
+            <img src="assets/images/portada.png" alt="Entrenador de fútbol enseñando táctica">
+        </div>
+        <div class="hero__overlay"></div>
+
+        <div class="hero__content">
+            <h1 class="hero__title">
+                Conviértete en el entrenador que <span>transforma desde su propio método</span>
+            </h1>
+        </div>
+    </section>
+
+    <!-- ==================== VIDEO ==================== -->
+    <div class="video-section reveal">
+        <div class="video-preview">
+            <img src="assets/images/portada.png" alt="Vista previa del vídeo MDEC">
+            <div class="video-preview__overlay"></div>
+            <div class="video-preview__play-btn">
+                <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+            <div class="video-preview__caption">
+                <span>Vídeo de presentación</span>
+                <p>Conoce el Método del Entrenador Completo en 2 minutos</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MÉTODO ==================== -->
+    <section class="section metodo" id="metodo">
+
+        <div class="metodo__wrapper">
+
+            <!-- Encabezado -->
+            <div class="metodo__header reveal">
+                <div class="metodo__header-left">
+                    <span class="section__label">El Método</span>
+                    <h2 class="metodo__heading">Un desarrollo<br>integral para el<br><span>entrenador/a</span></h2>
+                </div>
+                <div class="metodo__header-right">
+                    <div class="metodo__header-line"></div>
+                    <p class="metodo__intro">No es solo teoría. Es una metodología de aprendizaje aplicada al entrenamiento real. Técnica, emoción y comunicación para que mejores desde la primera sesión.</p>
+                </div>
+            </div>
+
+            <!-- Pizarra táctica -->
+            <div class="pizarra">
+                <div class="pizarra__step pizarra__step--left reveal">
+                    <div class="pizarra__content">
+                        <span class="pizarra__number">01</span>
+                        <h3 class="pizarra__title">Aprendizaje en Situaciones Reales</h3>
+                        <p class="pizarra__text">Partimos de contextos reales: tareas, problemas de sesión, gestión emocional. Analizamos, adaptamos y reconstruimos.</p>
+                    </div>
+                    <img src="assets/images/flechaderecha.png" class="pizarra__arrow pizarra__arrow--right-down" alt="Flecha táctica">
+                </div>
+
+                <div class="pizarra__step pizarra__step--right reveal">
+                    <div class="pizarra__content">
+                        <span class="pizarra__number">02</span>
+                        <h3 class="pizarra__title">Pensamiento de Entrenador</h3>
+                        <p class="pizarra__text">Modelos mentales claros para tomar decisiones rápidas y con propósito. No memorizar, sino pensar.</p>
+                    </div>
+                    <img src="assets/images/flechaizquierda.png" class="pizarra__arrow pizarra__arrow--left-down" alt="Flecha táctica">
+                </div>
+
+                <div class="pizarra__step pizarra__step--left reveal">
+                    <div class="pizarra__content">
+                        <span class="pizarra__number">03</span>
+                        <h3 class="pizarra__title">Micro‑destrezas</h3>
+                        <p class="pizarra__text">Habilidades complejas descompuestas en gestos entrenables: preguntas potentes, feedback, dirección emocional.</p>
+                    </div>
+                    <img src="assets/images/flechaderecha.png" class="pizarra__arrow pizarra__arrow--right-down" alt="Flecha táctica">
+                </div>
+
+                <div class="pizarra__step pizarra__step--right reveal">
+                    <div class="pizarra__content">
+                        <span class="pizarra__number">04</span>
+                        <h3 class="pizarra__title">Transferencia al Campo</h3>
+                        <p class="pizarra__text">Cada módulo termina con una herramienta para aplicar esa misma semana. La mejora pasa al campo inmediatamente.</p>
+                    </div>
+                    <img src="assets/images/flechaizquierda.png" class="pizarra__arrow pizarra__arrow--left-down" alt="Flecha táctica">
+                </div>
+
+                <div class="pizarra__step pizarra__step--left reveal">
+                    <div class="pizarra__content">
+                        <span class="pizarra__number">05</span>
+                        <h3 class="pizarra__title">Reflexión Guiada</h3>
+                        <p class="pizarra__text">Conecta lo aprendido con tu contexto. Gestiona dudas, estrés e inseguridades para mayor claridad mental.</p>
+                    </div>
+                    <img src="assets/images/flechaderecha.png" class="pizarra__arrow pizarra__arrow--right-down" alt="Flecha táctica">
+                </div>
+
+                <div class="pizarra__step pizarra__step--right reveal">
+                    <div class="pizarra__content">
+                        <span class="pizarra__number">06</span>
+                        <h3 class="pizarra__title">Narrativa Pedagógica</h3>
+                        <p class="pizarra__text">Conceptos a través de experiencias reales y situaciones cotidianas. Aprende desde la vivencia, no desde la teoría fría.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== STATS BAR ==================== -->
+    <section class="stats-bar">
+        <div class="stats-bar__inner reveal">
+            <div class="stat">
+                <div class="stat__number">500+</div>
+                <div class="stat__label">Entrenadores Formados</div>
+            </div>
+            <div class="stat">
+                <div class="stat__number">12+</div>
+                <div class="stat__label">Países</div>
+            </div>
+            <div class="stat">
+                <div class="stat__number">96%</div>
+                <div class="stat__label">Satisfacción</div>
+            </div>
+            <div class="stat">
+                <div class="stat__number">100+</div>
+                <div class="stat__label">Horas de Contenido</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== LIGHT BACKGROUND WRAPPER ==================== -->
+    <div class="light-bg-wrapper">
+        <div class="light-bg-content">
+        <!-- ==================== PILARES Y OBJETIVOS ==================== -->
+    <section class="section beneficios" id="beneficios">
+        <div class="beneficios__wrapper">
+            <div class="beneficios__visual reveal">
+                <div class="beneficios__visual-accent"></div>
+                <div class="beneficios__visual-img">
+                    <img src="assets/images/portada.png" alt="Entrenador MDEC en acción">
+                </div>
+            </div>
+            <div class="beneficios__content reveal">
+                <span class="section__label">¿En qué se basa?</span>
+                <h2 class="section__title">Tres pilares para <span>tu evolución</span></h2>
+                <p class="section__desc">Claridad metodológica, liderazgo humano y gestión emocional. Mejora tu capacidad para diseñar entrenamientos con propósito, toma decisiones con criterio propio y siéntete más seguro en tu día a día.</p>
+
+                <div class="beneficios__list">
+                    <div class="beneficio-item">
+                        <div class="beneficio-item__icon">
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div>
+                            <div class="beneficio-item__title">Habilidades técnicas y tácticas</div>
+                            <p class="beneficio-item__text">Desarrolla herramientas aplicadas al entrenamiento real en cualquier categoría o nivel.</p>
+                        </div>
+                    </div>
+                    <div class="beneficio-item">
+                        <div class="beneficio-item__icon">
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div>
+                            <div class="beneficio-item__title">Capacidad de Liderazgo</div>
+                            <p class="beneficio-item__text">Potencia la gestión de grupo, aprende a corregir mejor y a entender realmente a tus jugadores/as.</p>
+                        </div>
+                    </div>
+                    <div class="beneficio-item">
+                        <div class="beneficio-item__icon">
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div>
+                            <div class="beneficio-item__title">Comunicación Efectiva</div>
+                            <p class="beneficio-item__text">Aprende a comunicar de forma clara, motivadora y con el impacto que tu equipo necesita.</p>
+                        </div>
+                    </div>
+                    <div class="beneficio-item">
+                        <div class="beneficio-item__icon">
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div>
+                            <div class="beneficio-item__title">Inteligencia Emocional</div>
+                            <p class="beneficio-item__text">Aplica herramientas para poder entrenar sin ansiedad, sin estrés y con mucha más seguridad.</p>
+                        </div>
+                    </div>
+                    <div class="beneficio-item">
+                        <div class="beneficio-item__icon">
+                            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div>
+                            <div class="beneficio-item__title">Plan de mejora personal</div>
+                            <p class="beneficio-item__text">Crea un camino claro para tu crecimiento a lo largo de los 5 módulos del programa formativo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIOS ==================== -->
+    <section class="section testimonials" id="testimonios">
+        <div class="testimonials__wrapper">
+            <div class="testimonials__header reveal">
+                <span class="section__label">Testimonios</span>
+                <h2 class="section__title">Lo que dicen nuestros <span>entrenadores</span></h2>
+            </div>
+
+            <div class="testimonials__grid">
+                <!-- Video Testimonio 1 -->
+                <div class="testimonial-video-card reveal">
+                    <div class="testimonial-video-wrapper">
+                        <!-- El secreto del rendimiento: preload="none" y un "poster" (carátula) -->
+                        <video controls preload="none" poster="assets/images/logo.png" class="testimonial-video">
+                            <source src="tu-video-1.mp4" type="video/mp4">
+                            Tu navegador no soporta vídeos.
+                        </video>
+                    </div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-card__name">Javier Pérez</div>
+                        <div class="testimonial-card__role">Entrenador Juvenil</div>
+                    </div>
+                </div>
+
+                <!-- Video Testimonio 2 -->
+                <div class="testimonial-video-card reveal">
+                    <div class="testimonial-video-wrapper">
+                        <video controls preload="none" poster="assets/images/logo.png" class="testimonial-video">
+                            <source src="tu-video-2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-card__name">Marta Gómez</div>
+                        <div class="testimonial-card__role">Entrenadora 1ª División Fem</div>
+                    </div>
+                </div>
+
+                <!-- Video Testimonio 3 -->
+                <div class="testimonial-video-card reveal">
+                    <div class="testimonial-video-wrapper">
+                        <video controls preload="none" poster="assets/images/logo.png" class="testimonial-video">
+                            <source src="tu-video-3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="testimonial-info">
+                        <div class="testimonial-card__name">Carlos Ruiz</div>
+                        <div class="testimonial-card__role">Coordinador Deportivo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        </div> <!-- /light-bg-content -->
+    </div> <!-- /light-bg-wrapper -->
+
+    <!-- ==================== CTA FINAL ==================== -->
+    <section class="cta-final" id="contacto">
+        <div class="cta-final__glow cta-final__glow--green"></div>
+        <div class="cta-final__glow cta-final__glow--blue"></div>
+
+        <div class="cta-final__content reveal">
+            <span class="section__label">Da el paso</span>
+            <h2 class="cta-final__title">
+                ¿Listo para ser un entrenador/a que <span>transforma</span>?
+            </h2>
+            <p class="cta-final__desc">Únete al Método del Entrenador Completo. 5 módulos, herramientas prácticas y un plan de mejora para llevar tu carrera al siguiente nivel.</p>
+            <a href="#" class="btn-cta btn-cta--green" style="font-size: 16px; padding: 18px 48px;">
+                Empieza tu transformación
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <a href="#" class="footer__logo">
+                <img src="assets/images/logo.png" alt="MDEC Logo">
+            </a>
+
+            <p class="footer__copy">© 2026 MDEC — Método del Entrenador Completo. Todos los derechos reservados.</p>
+
+            <div class="footer__socials">
+                <a href="#" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.88a.88.88 0 1 1 0 1.76.88.88 0 0 1 0-1.76z"/></svg>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.54 3.5 12 3.5 12 3.5s-7.54 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.56 31.56 0 0 0 0 12a31.56 31.56 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.84.55 9.38.55 9.38.55s7.54 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.56 31.56 0 0 0 24 12a31.56 31.56 0 0 0-.5-5.81zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg>
+                </a>
+                <a href="#" aria-label="Twitter / X">
+                    <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
