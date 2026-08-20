@@ -957,7 +957,7 @@ ul { list-style: none; }
     .pizarra__step {
         width: 100%;
         max-width: 100%;
-        padding-bottom: 50px;
+        padding-bottom: 70px; /* Más espacio para las flechas más grandes */
         margin-bottom: 0;
         text-align: center;
     }
@@ -969,11 +969,11 @@ ul { list-style: none; }
         padding-right: 0;
     }
     
-    /* Flechas centradas apuntando hacia abajo */
+    /* Flechas centradas apuntando hacia abajo, más grandes */
     .pizarra__arrow {
         display: block;
-        width: 80px;
-        bottom: -20px;
+        width: 130px; /* Flechas más grandes (antes 80px) */
+        bottom: -25px;
         left: 50% !important;
         right: auto !important;
         transform: translateX(-50%);
@@ -1026,7 +1026,7 @@ ul { list-style: none; }
     }
     
     .pizarra__content { padding: 20px 0; }
-    .pizarra__number { font-size: 36px; }
+    .pizarra__number { font-size: 48px; } /* Más grande en móvil */
     
     .testimonials__grid { grid-template-columns: 1fr; }
 
