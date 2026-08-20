@@ -853,7 +853,7 @@ ul { list-style: none; }
     text-align: center;
     position: relative;
     overflow: hidden;
-    border-top: 1px solid rgba(68, 164, 220, 0.3);
+    border-top: 3px solid rgba(68, 164, 220, 0.5);
 }
 
 .cta-final .section__label {
@@ -969,7 +969,7 @@ ul { list-style: none; }
 /* ============ OTROS PRODUCTOS (v2) ============ */
 .secondary-products {
     padding: 100px 48px;
-    border-top: 1px solid rgba(68, 164, 220, 0.2);
+    border-top: 3px solid rgba(68, 164, 220, 0.4);
     position: relative;
 }
 
