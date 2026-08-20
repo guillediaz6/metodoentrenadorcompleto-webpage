@@ -400,7 +400,7 @@ ul { list-style: none; }
     background-image: url('../assets/images/fondopelotas.png');
     background-repeat: repeat;
     background-position: center top;
-    background-size: cover; /* Adaptación natural */
+    background-size: 500px auto; /* Tamaño fijo para que los símbolos se vean bien y el patrón se repita en móvil sin deformarse */
     opacity: 0.15;
     pointer-events: none;
     z-index: 0;
