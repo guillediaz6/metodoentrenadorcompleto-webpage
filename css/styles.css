@@ -1119,8 +1119,8 @@ ul { list-style: none; }
 /* ============ FOOTER ============ */
 .footer {
     background: var(--blue);
-    border-top: none;
-    padding: 12px 48px;
+    border-top: 3px solid var(--white);
+    padding: 16px 48px;
 }
 
 .footer__inner {
@@ -1134,7 +1134,7 @@ ul { list-style: none; }
 }
 
 .footer__logo img {
-    height: 280px;
+    height: 100px;
     width: auto;
     display: block;
 }
