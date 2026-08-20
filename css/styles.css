@@ -649,9 +649,7 @@ ul { list-style: none; }
 }
 
 .beneficios__visual-img {
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 24px 60px rgba(0,0,0,0.15);
+    display: block;
 }
 
 .beneficios__visual-img img {
@@ -660,14 +658,7 @@ ul { list-style: none; }
 }
 
 .beneficios__visual-accent {
-    position: absolute;
-    top: -20px;
-    right: -20px;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(70,172,55,0.3), transparent);
-    filter: blur(25px);
+    display: none;
 }
 
 .beneficios__list {
