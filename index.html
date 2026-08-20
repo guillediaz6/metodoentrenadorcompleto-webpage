@@ -264,46 +264,36 @@
                 <h2 class="section__title">Lo que dicen nuestros <span>entrenadores</span></h2>
             </div>
 
-            <div class="testimonials__grid">
-                <!-- Video Testimonio 1 -->
-                <div class="testimonial-video-card reveal">
-                    <div class="testimonial-video-wrapper">
-                        <!-- El secreto del rendimiento: preload="none" y un "poster" (carátula) -->
-                        <video controls preload="none" poster="assets/images/logo.png" class="testimonial-video">
-                            <source src="tu-video-1.mp4" type="video/mp4">
-                            Tu navegador no soporta vídeos.
-                        </video>
-                    </div>
-                    <div class="testimonial-info">
-                        <div class="testimonial-card__name">Javier Pérez</div>
-                        <div class="testimonial-card__role">Entrenador Juvenil</div>
-                    </div>
+            <!-- Fila 1: Vídeos verticales (3 columnas) -->
+            <div class="testimonials__row-vertical">
+                <div class="testimonial-item reveal">
+                    <video controls preload="metadata" class="testimonial-video">
+                        <source src="assets/videos/testimonio1.mp4" type="video/mp4">
+                    </video>
                 </div>
-
-                <!-- Video Testimonio 2 -->
-                <div class="testimonial-video-card reveal">
-                    <div class="testimonial-video-wrapper">
-                        <video controls preload="none" poster="assets/images/logo.png" class="testimonial-video">
-                            <source src="tu-video-2.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="testimonial-info">
-                        <div class="testimonial-card__name">Marta Gómez</div>
-                        <div class="testimonial-card__role">Entrenadora 1ª División Fem</div>
-                    </div>
+                <div class="testimonial-item reveal">
+                    <video controls preload="metadata" class="testimonial-video">
+                        <source src="assets/videos/testimonio3.mp4" type="video/mp4">
+                    </video>
                 </div>
+                <div class="testimonial-item reveal">
+                    <video controls preload="metadata" class="testimonial-video">
+                        <source src="assets/videos/testimonio4.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
 
-                <!-- Video Testimonio 3 -->
-                <div class="testimonial-video-card reveal">
-                    <div class="testimonial-video-wrapper">
-                        <video controls preload="none" poster="assets/images/logo.png" class="testimonial-video">
-                            <source src="tu-video-3.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="testimonial-info">
-                        <div class="testimonial-card__name">Carlos Ruiz</div>
-                        <div class="testimonial-card__role">Coordinador Deportivo</div>
-                    </div>
+            <!-- Fila 2: Vídeos horizontales (2 columnas) -->
+            <div class="testimonials__row-horizontal">
+                <div class="testimonial-item reveal">
+                    <video controls preload="metadata" class="testimonial-video">
+                        <source src="assets/videos/testimonio2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="testimonial-item reveal">
+                    <video controls preload="metadata" class="testimonial-video">
+                        <source src="assets/videos/testimonio5.mp4" type="video/mp4">
+                    </video>
                 </div>
             </div>
         </div>
