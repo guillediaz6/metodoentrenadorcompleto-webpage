@@ -400,10 +400,17 @@ ul { list-style: none; }
     background-image: url('../assets/images/fondopelotas.png');
     background-repeat: repeat;
     background-position: center top;
-    background-size: 1200px auto; /* Aumentamos el tamaño fijo para que haya menos repeticiones y menos densidad de "pelotas" */
+    background-size: 100% auto; /* En escritorio se adaptará al ancho (aprox 1200px) */
     opacity: 0.15;
     pointer-events: none;
     z-index: 0;
+}
+
+@media (max-width: 768px) {
+    .metodo::before {
+        /* En móvil buscamos el punto intermedio entre muy denso (500px) y nada (1200px) */
+        background-size: 800px auto; 
+    }
 }
 
 .metodo__wrapper {
