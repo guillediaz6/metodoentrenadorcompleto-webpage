@@ -957,7 +957,7 @@ ul { list-style: none; }
     .pizarra__step {
         width: 100%;
         max-width: 100%;
-        padding-bottom: 70px; /* Más espacio para las flechas más grandes */
+        padding-bottom: 120px; /* Mucho más espacio entre puntos */
         margin-bottom: 0;
         text-align: center;
     }
@@ -972,8 +972,8 @@ ul { list-style: none; }
     /* Flechas centradas apuntando hacia abajo, más grandes */
     .pizarra__arrow {
         display: block;
-        width: 130px; /* Flechas más grandes (antes 80px) */
-        bottom: -25px;
+        width: 130px; 
+        bottom: 10px; /* Centradas dentro del hueco generado por el padding */
         left: 50% !important;
         right: auto !important;
         transform: translateX(-50%);
