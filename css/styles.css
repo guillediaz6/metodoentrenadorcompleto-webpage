@@ -787,6 +787,67 @@ ul { list-style: none; }
     color: #647B8A;
 }
 
+/* ============ FAQ ============ */
+.faq {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.faq__wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq__item {
+    background: #FFFFFF;
+    border-radius: 12px;
+    border: 1px solid rgba(68,164,220,0.15);
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq__item:hover {
+    border-color: #44A4DC;
+    box-shadow: 0 8px 24px rgba(68,164,220,0.08);
+}
+
+.faq__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq__question h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0F1B22;
+    margin: 0;
+}
+
+.faq__icon {
+    font-size: 24px;
+    font-weight: 300;
+    color: #44A4DC;
+    transition: transform 0.3s ease;
+}
+
+.faq__answer {
+    margin-top: 16px;
+    font-size: 15px;
+    color: #647B8A;
+    line-height: 1.6;
+    /* En un futuro se puede animar el alto, de momento lo dejamos visible pero estático */
+    /* display: none; */ 
+}
+
 /* ============ CTA FINAL ============ */
 .cta-final {
     background: var(--dark);
