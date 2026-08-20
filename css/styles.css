@@ -1120,7 +1120,7 @@ ul { list-style: none; }
 .footer {
     background: var(--dark-surface);
     border-top: 1px solid rgba(68,164,220,0.1);
-    padding: 48px;
+    padding: 24px 48px;
 }
 
 .footer__inner {
@@ -1134,7 +1134,7 @@ ul { list-style: none; }
 }
 
 .footer__logo img {
-    height: 70px;
+    height: 125px;
     width: auto;
     display: block;
 }
