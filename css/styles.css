@@ -408,10 +408,9 @@ ul { list-style: none; }
 
 @media (max-width: 768px) {
     .metodo::before {
-        /* En móvil buscamos el punto intermedio entre muy denso (500px) y nada (1200px) */
-        background-size: 800px auto; 
-        /* Obligamos a dibujar desde la esquina superior izquierda, para evitar caer en huecos vacíos del centro de la imagen original */
-        background-position: left top;
+        /* Encajamos la imagen completa al ancho del móvil para que se vean todos sus elementos (izquierda y derecha), permitiendo que se repita hacia abajo */
+        background-size: 100% auto; 
+        background-position: center top;
     }
 }
 
