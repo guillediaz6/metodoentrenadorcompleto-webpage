@@ -400,7 +400,7 @@ ul { list-style: none; }
     background-image: url('../assets/images/fondopelotas.png');
     background-repeat: repeat;
     background-position: center top;
-    background-size: 500px auto; /* Tamaño fijo para que los símbolos se vean bien y el patrón se repita en móvil sin deformarse */
+    background-size: 1200px auto; /* Aumentamos el tamaño fijo para que haya menos repeticiones y menos densidad de "pelotas" */
     opacity: 0.15;
     pointer-events: none;
     z-index: 0;
