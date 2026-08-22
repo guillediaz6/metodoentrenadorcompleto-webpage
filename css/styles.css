@@ -633,7 +633,7 @@ ul { list-style: none; }
 /* ============ LIGHT BACKGROUND WRAPPER ============ */
 .light-bg-wrapper {
     background-color: #E2E8F0;
-    background-image: url('../assets/images/fondo.webp');
+    background-image: url('../assets/images/fondo.png');
     background-position: top center;
     background-size: cover; /* Cambiado de 100% auto a cover para que se adapte libremente */
     background-repeat: no-repeat;
