@@ -127,7 +127,9 @@ ul { list-style: none; }
 }
 
 .header__nav a:hover { color: var(--dark); }
+.header__nav a.btn-cta:hover { color: var(--white); }
 .header__nav a:hover::after { width: 100%; }
+.header__nav a.btn-cta:hover::after { width: 0; } /* Remove underline on hover for the button */
 
 /* ============ CTA BUTTONS ============ */
 .btn-cta {
@@ -812,6 +814,58 @@ ul { list-style: none; }
     .testimonials__row-horizontal {
         grid-template-columns: 1fr;
     }
+}
+
+/* ============ NUESTRO EQUIPO ============ */
+.team__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.team__member {
+    text-align: center;
+}
+
+.team__member-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 24px;
+    overflow: hidden;
+    background: #e0e0e0;
+    border: 4px solid var(--white);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.team__member-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team__member-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 4px;
+}
+
+.team__member-role {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.team__member-desc {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
 }
 
 /* ============ FAQ ============ */
