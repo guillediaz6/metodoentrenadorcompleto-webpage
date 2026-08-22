@@ -660,8 +660,9 @@ ul { list-style: none; }
     background-color: #E2E8F0;
     background-image: url('../assets/images/nuevofondo.png?v=5');
     background-position: top center;
-    background-size: cover; /* Cambiado de 100% auto a cover para que se adapte libremente */
-    background-repeat: no-repeat;
+    background-size:  100% auto;
+    background-repeat: repeat-y; /* Cambiado de 100% auto a cover para que se adapte libremente */
+    
     position: relative;
     color: #0F1B22;
 }
@@ -1409,7 +1410,7 @@ ul { list-style: none; }
     }
     
     .section { padding: 72px 20px; }
-    .stats-bar { padding: 80px 20px; }
+    .stats-bar { padding:  60px 10px; }
 
     .hamburger { display: flex; }
 
@@ -1487,12 +1488,11 @@ ul { list-style: none; }
     .video-preview__caption p { font-size: 14px; }
     
     .stats-bar__inner { 
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 32px 16px; 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 10px; 
     }
-    
-    .stat__number { font-size: 36px; }
-    .stat__label { font-size: 11px; }
+    .stat__number { font-size: 20px; }
+    .stat__label { font-size: 8px; }
 
     .cta-final__title { font-size: 28px; }
     .cta-final__desc { font-size: 15px; }
@@ -1506,6 +1506,9 @@ ul { list-style: none; }
         gap: 20px;
     }
 }
+
+
+
 
 
 
