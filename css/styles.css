@@ -439,7 +439,7 @@ ul { list-style: none; }
     bottom: 0;
     left: 0;
     width: 100%;
-    background-image: url('../assets/images/fondopelotas.png');
+    background-image: url('../assets/images/fondopelotas.webp');
     background-repeat: repeat;
     background-position: center top;
     background-size: 100% auto; /* En escritorio se adaptará al ancho (aprox 1200px) */
@@ -633,7 +633,7 @@ ul { list-style: none; }
 /* ============ LIGHT BACKGROUND WRAPPER ============ */
 .light-bg-wrapper {
     background-color: #E2E8F0;
-    background-image: url('../assets/images/fondo.png');
+    background-image: url('../assets/images/fondo.webp');
     background-position: top center;
     background-size: cover; /* Cambiado de 100% auto a cover para que se adapte libremente */
     background-repeat: no-repeat;
