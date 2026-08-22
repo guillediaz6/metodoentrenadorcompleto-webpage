@@ -102,7 +102,17 @@ ul { list-style: none; }
 .header__nav {
     display: flex;
     align-items: center;
-    gap: 36px;
+    gap: 32px;
+}
+
+@media (max-width: 1200px) {
+    .header__nav {
+        gap: 18px;
+    }
+    .header__nav a {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
 }
 
 .header__nav a {
