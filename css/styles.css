@@ -1415,7 +1415,7 @@ ul { list-style: none; }
 
     .video-preview { 
         width: 90%; 
-        transform: translateY(-8%); /* Bajamos el vídeo un poquitito desde el -20% anterior */
+        transform: translateY(-2%); /* Bajamos el vídeo un poquitito más */
     }
     
     .metodo { padding-top: 220px; /* Empujamos todo el contenido hacia abajo para que el vídeo no lo pise */ }
