@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -18,6 +18,21 @@
             grid-template-columns: 1fr 1fr;
             gap: 64px;
             align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        .tino-hero::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            background: radial-gradient(circle at center, rgba(0, 194, 113, 0.15) 0%, rgba(0, 86, 179, 0.1) 35%, transparent 70%);
+            filter: blur(40px);
+            z-index: -1;
+            pointer-events: none;
         }
         .tino-hero__img {
             position: relative;
