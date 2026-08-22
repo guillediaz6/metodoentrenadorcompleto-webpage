@@ -1,26 +1,96 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MDEC â€” MÃ©todo del Entrenador Completo</title>
-
-    <!-- Fonts -->
+    <title>Conoce a Tino D&#233;niz &#8212; MDEC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/logo.webp">
-
-    <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .tino-hero {
+            padding: 160px 48px 100px;
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+        .tino-hero__img {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 24px 64px rgba(0,0,0,0.15);
+        }
+        .tino-hero__img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .tino-hero__content {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .tino-hero__label {
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--green);
+        }
+        .tino-hero__title {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--blue);
+            line-height: 1.1;
+            margin: 0;
+        }
+        .tino-hero__divider {
+            width: 60px;
+            height: 4px;
+            background: var(--green);
+            border-radius: 2px;
+        }
+        .tino-hero__bio {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--dark);
+            margin: 0;
+        }
+        .tino-hero__badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 8px;
+        }
+        .tino-badge {
+            background: var(--blue);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 8px 16px;
+            border-radius: 999px;
+            letter-spacing: 0.5px;
+        }
+        .tino-badge--green { background: var(--green); }
+        @media (max-width: 768px) {
+            .tino-hero {
+                grid-template-columns: 1fr;
+                padding: 140px 24px 80px;
+                gap: 40px;
+            }
+            .tino-hero__title { font-size: 34px; }
+            .tino-hero__img { max-width: 360px; margin: 0 auto; }
+        }
+    </style>
 </head>
 <body>
-
-    <!-- ==================== HEADER ==================== -->
     <div class="header-wrapper">
-        <!-- Top Bar (Azul) -->
         <div class="top-bar">
             <div class="top-bar__socials">
                 <a href="mailto:info@metododelentrenadorcompleto.com" aria-label="Email">
@@ -29,7 +99,7 @@
                 <a href="https://www.instagram.com/metodoentrenadorcompleto?utm_source=qr" target="_blank" aria-label="Instagram">
                     <svg viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.88a.88.88 0 1 1 0 1.76.88.88 0 0 1 0-1.76z"/></svg>
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=61574471493591&mibextid=wwXIfr&rdid=zTDzTBmANtoQClgf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BgKkVTzEr%2F%3Fmibextid%3DwwXIfr#" target="_blank" aria-label="Facebook">
+                <a href="https://www.facebook.com/profile.php?id=61574471493591" target="_blank" aria-label="Facebook">
                     <svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
                 </a>
                 <a href="https://www.tiktok.com/@metodoentrenadorc" target="_blank" aria-label="TikTok">
@@ -40,67 +110,71 @@
                 </a>
             </div>
         </div>
-
-        <!-- Main Header (Verde) -->
         <header class="header" id="header">
-            <a href="#" class="header__logo">
+            <a href="index.html" class="header__logo">
                 <img src="assets/images/logo.webp" alt="MDEC Logo">
             </a>
-
             <nav class="header__nav" id="nav">
-                <a href="#metodo">MÃ©todo</a>
-                <a href="#beneficios">Beneficios</a>
-                <a href="#testimonios">Testimonios</a>
-                <a href="#faq">Resuelve tus dudas</a>
-                <a href="mailto:info@metododelentrenadorcompleto.com">ContÃ¡ctanos</a>
-                <a href="#contacto" class="btn-cta btn-cta--dark">Empieza Ahora</a>
+                <a href="index.html#metodo">M&#233;todo</a>
+                <a href="index.html#beneficios">Beneficios</a>
+                <a href="index.html#testimonios">Testimonios</a>
+                <a href="index.html#faq">Resuelve tus dudas</a>
+                <a href="mailto:info@metododelentrenadorcompleto.com">Cont&#225;ctanos</a>
+                <a href="index.html#contacto" class="btn-cta btn-cta--dark">Empieza Ahora</a>
             </nav>
-
             <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </div>
         </header>
     </div>
 
-
-    <section class="section" style="padding-top: 150px; min-height: 70vh; display: flex; align-items: center; justify-content: center;">
-        <div class="beneficios__wrapper" >
-            <div class="beneficios__visual" style="position: relative;">
-                <img src="assets/images/tinodeniz.webp" alt="Tino Déniz" style="width: 100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+    <div class="tino-hero">
+        <div class="tino-hero__img">
+            <img src="assets/images/tinodeniz.webp" alt="Tino D&#233;niz, entrenador UEFA PRO">
+        </div>
+        <div class="tino-hero__content">
+            <span class="tino-hero__label">Fundador del M&#233;todo</span>
+            <h1 class="tino-hero__title">Tino D&#233;niz</h1>
+            <div class="tino-hero__divider"></div>
+            <p class="tino-hero__bio">
+                Soy Tino D&#233;niz, Maestro Especialista en Educaci&#243;n F&#237;sica por la ULPGC,
+                formador de entrenadores/as y entrenador <strong>UEFA PRO</strong> con experiencia
+                desde todas las categor&#237;as de base hasta Segunda Divisi&#243;n B / Segunda RFEF
+                y creador del <strong>M&#233;todo del Entrenador Completo</strong>.
+            </p>
+            <div class="tino-hero__badges">
+                <span class="tino-badge tino-badge--green">UEFA PRO</span>
+                <span class="tino-badge">Maestro EF &middot; ULPGC</span>
+                <span class="tino-badge">Formador de Entrenadores</span>
+                <span class="tino-badge">2&#170; RFEF</span>
             </div>
-            <div class="beneficios__content">
-                <h1 style="color: var(--blue); font-size: 42px; margin-bottom: 24px; font-weight: 800;">Conoce a Tino Déniz</h1>
-                <p style="font-size: 18px; line-height: 1.8; color: var(--dark); margin-bottom: 32px;">
-                    Soy Tino Déniz, Maestro Especialista en Educación Física por la ULPGC, formador de entrenadores/as y entrenador UEFA PRO con experiencia desde todas las categorías de base hasta Segunda División B / Segunda RFEF y creador del Método del Entrenador Completo.
-                </p>
-                <a href="index.html" class="btn-cta btn-cta--blue">Volver al inicio</a>
+            <div>
+                <a href="index.html#contacto" class="btn-cta btn-cta--dark">Empieza con el M&#233;todo</a>
             </div>
         </div>
-    </section>
+    </div>
 
-            <a href="#" class="footer__logo">
+    <footer class="footer">
+        <div class="footer__inner">
+            <a href="index.html" class="footer__logo">
                 <img src="assets/images/logo.webp" alt="MDEC Logo">
             </a>
-
             <div class="footer__text">
-                <p class="footer__copy">Â© 2026 MDEC â€” MÃ©todo del Entrenador Completo. Todos los derechos reservados.</p>
+                <p class="footer__copy">&#169; 2026 MDEC &#8212; M&#233;todo del Entrenador Completo. Todos los derechos reservados.</p>
                 <div class="footer__legal-links">
-                    <a href="aviso-legal.html">Aviso Legal</a> | 
-                    <a href="privacidad.html">PolÃ­tica de Privacidad</a> | 
-                    <a href="cookies.html">PolÃ­tica de Cookies</a>
+                    <a href="aviso-legal.html">Aviso Legal</a> |
+                    <a href="privacidad.html">Pol&#237;tica de Privacidad</a> |
+                    <a href="cookies.html">Pol&#237;tica de Cookies</a>
                 </div>
                 <p class="footer__dev">
                     Hecho por <a href="https://guillediaz6.github.io/portfolio" target="_blank" rel="noopener noreferrer" class="footer__dev-link">gdm.developer</a>
                 </p>
             </div>
-
             <div class="footer__socials">
                 <a href="https://www.instagram.com/metodoentrenadorcompleto?utm_source=qr" target="_blank" aria-label="Instagram">
                     <svg viewBox="0 0 24 24"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm5.25-.88a.88.88 0 1 1 0 1.76.88.88 0 0 1 0-1.76z"/></svg>
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=61574471493591&mibextid=wwXIfr&rdid=zTDzTBmANtoQClgf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BgKkVTzEr%2F%3Fmibextid%3DwwXIfr#" target="_blank" aria-label="Facebook">
+                <a href="https://www.facebook.com/profile.php?id=61574471493591" target="_blank" aria-label="Facebook">
                     <svg viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
                 </a>
                 <a href="https://www.tiktok.com/@metodoentrenadorc" target="_blank" aria-label="TikTok">
@@ -113,8 +187,6 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="js/main.js"></script>
-
 </body>
 </html>
