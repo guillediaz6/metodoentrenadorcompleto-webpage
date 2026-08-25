@@ -35,7 +35,7 @@ ul { list-style: none; }
 }
 
 .top-bar {
-    background: var(--blue);
+    background: var(--green);
     padding: 6px 48px;
     display: flex;
     justify-content: flex-end;
@@ -65,7 +65,7 @@ ul { list-style: none; }
 }
 
 .header {
-    background: var(--green);
+    background: var(--blue);
     padding: 24px 48px;
     display: flex;
     align-items: center;
@@ -1506,6 +1506,7 @@ ul { list-style: none; }
         gap: 20px;
     }
 }
+
 
 
 
