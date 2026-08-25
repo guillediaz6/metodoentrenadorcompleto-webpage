@@ -12,7 +12,7 @@
     --font: 'Noto Sans', sans-serif;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background-color: var(--blue); }
 
 body {
     font-family: var(--font);
@@ -23,6 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    min-height: 100dvh;
     -webkit-font-smoothing: antialiased;
 }
 
