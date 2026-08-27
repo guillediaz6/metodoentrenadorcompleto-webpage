@@ -624,7 +624,7 @@ ul { list-style: none; }
 
 /* ============ STATS BAR ============ */
 .stats-bar {
-    background-image: url('../assets/images/fondohorizontal.png?v=5');
+    background-image: url('../assets/images/fondohorizontal_opt.webp?v=5');
     background-size: 110% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -662,7 +662,7 @@ ul { list-style: none; }
 /* ============ LIGHT BACKGROUND WRAPPER ============ */
 .light-bg-wrapper {
     background-color: #E2E8F0;
-    background-image: url('../assets/images/nuevofondo.png?v=5');
+    background-image: url('../assets/images/nuevofondo_opt.webp?v=5');
     background-position: top center;
     background-size:  100% auto;
     background-repeat: repeat-y; /* Cambiado de 100% auto a cover para que se adapte libremente */
