@@ -978,7 +978,6 @@ ul { list-style: none; }
     text-align: center;
     position: relative;
     overflow: hidden;
-    border-top: 3px solid rgba(68, 164, 220, 0.5);
 }
 
 .cta-final .section__label {
@@ -1103,8 +1102,8 @@ ul { list-style: none; }
 
 /* ============ OTROS PRODUCTOS (v2) ============ */
 .secondary-products {
+    background: var(--dark);
     padding: 100px 48px;
-    border-top: 3px solid rgba(68, 164, 220, 0.4);
     position: relative;
 }
 
@@ -1220,11 +1219,7 @@ ul { list-style: none; }
 .stacking-section {
     position: sticky;
     top: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.4);
 }
 
 .stacking-section--1 { z-index: 10; }
@@ -1232,14 +1227,9 @@ ul { list-style: none; }
 .stacking-section--3 { z-index: 30; }
 .stacking-section--4 { z-index: 40; }
 
-.footer.stacking-section {
-    min-height: auto;
-}
-
 /* ============ FOOTER ============ */
 .footer {
     background: var(--blue);
-    border-top: 3px solid var(--white);
     padding: 16px 48px;
     margin-top: auto;
 }
