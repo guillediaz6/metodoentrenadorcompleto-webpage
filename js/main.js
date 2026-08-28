@@ -24,3 +24,20 @@ if (hamburger) {
         document.getElementById('nav').classList.toggle('open');
     });
 }
+
+
+// ============ STACKING CARDS: dynamic sticky top ============
+function updateStackingTops() {
+    const sections = document.querySelectorAll('.stacking-section');
+    const vh = window.innerHeight;
+    sections.forEach(function(section) {
+        var sectionHeight = section.offsetHeight;
+        if (sectionHeight > vh) {
+            section.style.top = -(sectionHeight - vh) + 'px';
+        } else {
+            section.style.top = '0px';
+        }
+    });
+}
+updateStackingTops();
+window.addEventListener('resize', updateStackingTops);

@@ -1225,7 +1225,7 @@ ul { list-style: none; }
 .stacking-section--1 { z-index: 10; }
 .stacking-section--2 { z-index: 20; }
 .stacking-section--3 { z-index: 30; }
-.stacking-section--4 { z-index: 40; }
+
 
 /* ============ FOOTER ============ */
 .footer {
