@@ -912,6 +912,7 @@ ul { list-style: none; }
 .faq {
     padding-top: 40px;
     padding-bottom: 80px;
+    background: var(--dark-surface);
 }
 
 .faq__wrapper {
@@ -1208,6 +1209,31 @@ ul { list-style: none; }
     .secondary-products {
         padding: 80px 24px;
     }
+}
+
+
+/* ============ STACKING SECTIONS (parallax cards) ============ */
+.stacking-wrapper {
+    position: relative;
+}
+
+.stacking-section {
+    position: sticky;
+    top: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.stacking-section--1 { z-index: 10; }
+.stacking-section--2 { z-index: 20; }
+.stacking-section--3 { z-index: 30; }
+.stacking-section--4 { z-index: 40; }
+
+.footer.stacking-section {
+    min-height: auto;
 }
 
 /* ============ FOOTER ============ */
