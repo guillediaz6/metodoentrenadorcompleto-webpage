@@ -912,7 +912,7 @@ ul { list-style: none; }
 .faq {
     padding-top: 40px;
     padding-bottom: 80px;
-    background: var(--dark-surface);
+    background: #0e2438;
 }
 
 .faq__wrapper {
@@ -972,7 +972,7 @@ ul { list-style: none; }
 
 /* ============ CTA FINAL ============ */
 .cta-final {
-    background: var(--dark);
+    background: #0e2438;
     color: #FFFFFF;
     padding: 100px 48px;
     text-align: center;
@@ -1038,19 +1038,17 @@ ul { list-style: none; }
 }
 
 .cta-final__card {
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #FFFFFF;
     border-radius: 20px;
     padding: 40px 36px;
     text-align: left;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
 .cta-final__card-badge {
     display: inline-block;
-    background: linear-gradient(135deg, var(--green), var(--blue));
-    color: #FFF;
+    background: rgba(70, 172, 55, 0.15);
+    color: var(--green);
     font-size: 11px;
     font-weight: 700;
     text-transform: uppercase;
@@ -1063,7 +1061,7 @@ ul { list-style: none; }
 .cta-final__card-name {
     font-size: 22px;
     font-weight: 700;
-    color: #FFF;
+    color: #0e2438;
     margin-bottom: 24px;
     line-height: 1.3;
 }
@@ -1079,9 +1077,9 @@ ul { list-style: none; }
     align-items: center;
     gap: 12px;
     font-size: 15px;
-    color: rgba(255, 255, 255, 0.75);
+    color: #4a5d6e;
     padding: 8px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    border-bottom: 1px solid #e1e8ed;
 }
 
 .cta-final__card-features li:last-child {
@@ -1102,7 +1100,7 @@ ul { list-style: none; }
 
 /* ============ OTROS PRODUCTOS (v2) ============ */
 .secondary-products {
-    background: var(--dark);
+    background: #163653;
     padding: 100px 48px;
     position: relative;
 }
@@ -1206,8 +1204,10 @@ ul { list-style: none; }
         max-width: 400px;
     }
     .secondary-products {
-        padding: 80px 24px;
-    }
+    background: #163653;
+    padding: 100px 48px;
+    position: relative;
+}
 }
 
 

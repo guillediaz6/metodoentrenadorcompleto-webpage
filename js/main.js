@@ -30,21 +30,31 @@ if (hamburger) {
 function updateStackingTops() {
     const sections = document.querySelectorAll('.stacking-section');
     const vh = window.innerHeight;
+    
     sections.forEach(function(section) {
-        // Reset margin and top to calculate natural height
-        section.style.marginBottom = '0px';
-        section.style.top = '0px';
+        // Clean up any old margin-bottom left from previous buggy script
+        section.style.marginBottom = '';
         
-        var sectionHeight = section.offsetHeight;
+        const sectionHeight = section.offsetHeight;
         if (sectionHeight > vh) {
-            const overflow = sectionHeight - vh;
-            section.style.top = -overflow + 'px';
-            section.style.marginBottom = overflow + 'px'; // Push the next section down so it doesn't overlap early
+            // Push the sticky top up so the bottom of the section stops at the bottom of the screen
+            section.style.top = -(sectionHeight - vh) + 'px';
         } else {
             section.style.top = '0px';
-            section.style.marginBottom = '0px';
         }
     });
 }
+
+// Run initially
 updateStackingTops();
+
+// Run when window resizes
 window.addEventListener('resize', updateStackingTops);
+
+// Run when all images and resources finish loading (crucial for correct height calculation)
+window.addEventListener('load', updateStackingTops);
+
+// Run repeatedly for a short time in case fonts or dynamic content shift the layout
+setTimeout(updateStackingTops, 500);
+setTimeout(updateStackingTops, 1500);
+setTimeout(updateStackingTops, 3000);
