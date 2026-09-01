@@ -1184,6 +1184,8 @@ ul { list-style: none; }
 .footer {
     background: var(--blue);
     padding: 16px 48px;
+    box-shadow: none !important;
+    border-top: none !important;
     margin-top: auto;
 }
 
