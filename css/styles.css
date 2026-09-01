@@ -446,7 +446,7 @@ ul { list-style: none; }
 
 /* ============ MÉTODO ============ */
 .metodo {
-    background: linear-gradient(to bottom, #000000 0%, #0e2438 35%);
+    background: #000000;
     padding-top: 220px;
     padding-bottom: 80px;
     position: relative;
@@ -455,17 +455,27 @@ ul { list-style: none; }
 
 /* Fondo de pelotas a pantalla completa sin usar 100vw (que rompe móviles) */
 .metodo::before {
-        background-size: cover; 
-        background-repeat: no-repeat;
-        background-position: center top;
-    }
+    content: '';
+    position: absolute;
+    top: 300px; /* Empieza debajo del título */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('../assets/images/fondopelotas.webp?v=5');
+    background-repeat: repeat;
+    background-position: center top;
+    background-size: 100% auto; /* En escritorio se adaptará al ancho (aprox 1200px) */
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+}
 
 @media (max-width: 768px) {
     .metodo::before {
-        background-size: cover; 
+        /* Encajamos la imagen completa al ancho del móvil para que se vean todos sus elementos (izquierda y derecha), permitiendo que se repita hacia abajo */
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center top;
-    }
 }
 
 .metodo__wrapper {
