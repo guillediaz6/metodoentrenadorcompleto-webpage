@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
 /* ============ RESET & BASE ============ */
@@ -1611,4 +1612,16 @@ a.v2-cta:focus-visible {
     font-family: 'Unbounded', sans-serif !important;
     text-transform: uppercase;
     letter-spacing: -0.5px;
+}
+
+/* Estilo guapo y elegante para el titulo principal */
+.hero__title {
+    font-family: 'Playfair Display', serif !important;
+    text-transform: none !important;
+    letter-spacing: 0px !important;
+    font-weight: 700;
+}
+.hero__title span {
+    font-style: italic;
+    color: #e2e8f0; /* un gris perla muy elegante */
 }
