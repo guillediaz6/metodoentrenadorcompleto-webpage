@@ -1204,10 +1204,8 @@ ul { list-style: none; }
         max-width: 400px;
     }
     .secondary-products {
-    background: #163653;
-    padding: 100px 48px;
-    position: relative;
-}
+        padding: 80px 24px;
+    }
 }
 
 
