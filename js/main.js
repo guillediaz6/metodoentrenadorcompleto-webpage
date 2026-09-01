@@ -31,11 +31,18 @@ function updateStackingTops() {
     const sections = document.querySelectorAll('.stacking-section');
     const vh = window.innerHeight;
     sections.forEach(function(section) {
+        // Reset margin and top to calculate natural height
+        section.style.marginBottom = '0px';
+        section.style.top = '0px';
+        
         var sectionHeight = section.offsetHeight;
         if (sectionHeight > vh) {
-            section.style.top = -(sectionHeight - vh) + 'px';
+            const overflow = sectionHeight - vh;
+            section.style.top = -overflow + 'px';
+            section.style.marginBottom = overflow + 'px'; // Push the next section down so it doesn't overlap early
         } else {
             section.style.top = '0px';
+            section.style.marginBottom = '0px';
         }
     });
 }
