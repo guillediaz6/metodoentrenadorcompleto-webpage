@@ -446,7 +446,7 @@ ul { list-style: none; }
 
 /* ============ MÉTODO ============ */
 .metodo {
-    background: radial-gradient(ellipse at top, #141720 0%, #030406 80%);
+    background: linear-gradient(to bottom, #000000 0%, #141720 30%, #030406 100%);
     padding-top: 300px;
     padding-bottom: 80px;
     position: relative;
