@@ -1056,7 +1056,7 @@ ul { list-style: none; }
 
 /* ============ OTROS PRODUCTOS (v2) ============ */
 .secondary-products {
-    background: linear-gradient(to bottom, #0d0d0d 0%, #1a1a1a 50%, #0d0d0d 100%);
+    background: linear-gradient(to bottom, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
     padding: 100px 48px 250px 48px;
     position: relative;
 }
