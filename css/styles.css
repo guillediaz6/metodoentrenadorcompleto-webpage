@@ -455,25 +455,15 @@ ul { list-style: none; }
 
 /* Fondo de pelotas a pantalla completa sin usar 100vw (que rompe móviles) */
 .metodo::before {
-    content: '';
-    position: absolute;
-    top: 300px; /* Empieza debajo del título */
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-image: url('../assets/images/fondopelotas.webp?v=5');
-    background-repeat: repeat;
-    background-position: center top;
-    background-size: 100% auto; /* En escritorio se adaptará al ancho (aprox 1200px) */
-    opacity: 0.15;
-    pointer-events: none;
-    z-index: 0;
-}
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
 
 @media (max-width: 768px) {
     .metodo::before {
-        /* Encajamos la imagen completa al ancho del móvil para que se vean todos sus elementos (izquierda y derecha), permitiendo que se repita hacia abajo */
-        background-size: 100% auto; 
+        background-size: cover; 
+        background-repeat: no-repeat;
         background-position: center top;
     }
 }
