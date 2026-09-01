@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
 /* ============ RESET & BASE ============ */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -387,13 +388,6 @@ ul { list-style: none; }
     animation: fadeInUp 0.8s ease 0.15s both;
 }
 
-.hero__title span {
-    background: linear-gradient(135deg, var(--green), var(--blue));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
 .hero__subtitle {
     font-size: clamp(14px, 1.35vw, 18px);
     color: #FFFFFF;
@@ -432,10 +426,6 @@ ul { list-style: none; }
     font-weight: 700;
     line-height: 1.15;
     margin-bottom: 20px;
-}
-
-.section__title span {
-    color: var(--blue);
 }
 
 .section__desc {
@@ -479,10 +469,6 @@ ul { list-style: none; }
     font-weight: 700;
     line-height: 1.15;
     letter-spacing: -0.5px;
-}
-
-.metodo__heading span {
-    color: var(--green);
 }
 
 .metodo__header-right {
@@ -665,10 +651,6 @@ ul { list-style: none; }
 
 .beneficios .section__title {
     color: #0F1B22;
-}
-
-.beneficios .section__title span {
-    color: #2B7AAB; /* Azul corporativo oscurecido para fondos claros */
 }
 
 .beneficios .section__desc {
@@ -890,7 +872,7 @@ ul { list-style: none; }
 .faq {
     padding-top: 40px;
     padding-bottom: 80px;
-    background: #0e2438;
+    background: #010203;
 }
 
 .faq__wrapper {
@@ -950,7 +932,7 @@ ul { list-style: none; }
 
 /* ============ CTA FINAL ============ */
 .cta-final {
-    background: #0e2438;
+    background: #010203;
     color: #FFFFFF;
     padding: 100px 48px 250px 48px;
     text-align: center;
@@ -981,13 +963,6 @@ ul { list-style: none; }
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 16px;
-}
-
-.cta-final__title span {
-    background: linear-gradient(135deg, var(--green), var(--blue));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 .cta-final__desc {
@@ -1081,7 +1056,7 @@ ul { list-style: none; }
 
 /* ============ OTROS PRODUCTOS (v2) ============ */
 .secondary-products {
-    background: #163653;
+    background: linear-gradient(to bottom, #000000 0%, #141720 30%, #030406 100%);
     padding: 100px 48px 250px 48px;
     position: relative;
 }
@@ -1630,4 +1605,10 @@ a.v2-cta:hover {
 a.v2-cta:focus-visible {
     outline: 2px solid #2c86ba;
     outline-offset: 3px;
+}
+
+.hero__title, .section__title, .metodo__heading, .cta-final__title, .pizarra__title {
+    font-family: 'Unbounded', sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
 }
