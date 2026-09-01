@@ -446,8 +446,8 @@ ul { list-style: none; }
 
 /* ============ MÉTODO ============ */
 .metodo {
-    background: #000000;
-    padding-top: 220px;
+    background: radial-gradient(ellipse at top, #141720 0%, #030406 80%);
+    padding-top: 300px;
     padding-bottom: 80px;
     position: relative;
     overflow: hidden;
@@ -575,14 +575,12 @@ ul { list-style: none; }
     font-size: 56px;
     font-weight: 700;
     line-height: 1;
-    color: rgba(255,255,255,0.06);
+    color: rgba(255,255,255,0.15);
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
     margin-bottom: 4px;
-    transition: color 0.3s;
 }
 
-.pizarra__step:hover .pizarra__number {
-    color: rgba(70,172,55,0.25);
-}
+/* hover removido a peticion del usuario */
 
 .pizarra__title {
     font-size: 22px;
@@ -1493,7 +1491,7 @@ ul { list-style: none; }
         transform: translateY(-2%); /* Bajamos el vídeo un poquitito más */
     }
     
-    .metodo { padding-top: 220px; /* Empujamos todo el contenido hacia abajo para que el vídeo no lo pise */ }
+    .metodo { padding-top: 300px; }
     
     .beneficios__content {
         padding: 32px 24px;
