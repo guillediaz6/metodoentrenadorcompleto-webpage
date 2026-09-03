@@ -1098,6 +1098,7 @@ ul { list-style: none; }
     overflow: hidden;
     text-decoration: none;
     color: #FFF;
+    isolation: isolate;
     transition: all 0.35s ease;
 }
 
