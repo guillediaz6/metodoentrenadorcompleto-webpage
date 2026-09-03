@@ -1060,6 +1060,33 @@ ul { list-style: none; }
     background: linear-gradient(to bottom, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
     padding: 100px 48px 250px 48px;
     position: relative;
+    overflow: hidden;
+}
+
+/* decorative corner ring top-left */
+.secondary-products::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    pointer-events: none;
+}
+
+/* decorative dot grid top-right */
+.secondary-products::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 160px;
+    height: 160px;
+    background-image: radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px);
+    background-size: 18px 18px;
+    pointer-events: none;
 }
 
 .products-grid {
@@ -1160,7 +1187,7 @@ ul { list-style: none; }
         grid-template-columns: 1fr;
         max-width: 400px;
     }
-    .secondary-products { padding: 80px 24px 450px 24px; }
+    .secondary-products { padding: 80px 24px 650px 24px; }
 }
 
 
