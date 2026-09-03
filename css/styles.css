@@ -1063,31 +1063,6 @@ ul { list-style: none; }
     overflow: hidden;
 }
 
-/* decorative corner ring top-left */
-.secondary-products::before {
-    content: '';
-    position: absolute;
-    top: -80px;
-    left: -80px;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.04);
-    pointer-events: none;
-}
-
-/* decorative dot grid top-right */
-.secondary-products::after {
-    content: '';
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    width: 160px;
-    height: 160px;
-    background-image: radial-gradient(circle, rgba(255,255,255,0.07) 1px, transparent 1px);
-    background-size: 18px 18px;
-    pointer-events: none;
-}
 
 .products-grid {
     display: grid;
