@@ -77,3 +77,24 @@ document.querySelectorAll('.team__member button.btn-cta, .beneficios__btn-wrap b
         }
     });
 });
+
+// ============ FAQ ACCORDION ============
+document.querySelectorAll('.faq__item').forEach(function(item) {
+    item.addEventListener('click', function() {
+        const isOpen = item.classList.contains('active');
+        // Close others
+        document.querySelectorAll('.faq__item').forEach(function(other) {
+            other.classList.remove('active');
+            const icon = other.querySelector('.faq__icon');
+            if (icon) icon.textContent = '+';
+        });
+        if (!isOpen) {
+            item.classList.add('active');
+            const icon = item.querySelector('.faq__icon');
+            if (icon) icon.textContent = '−';
+        }
+        if (typeof updateStackingTops === 'function') {
+            updateStackingTops();
+        }
+    });
+});

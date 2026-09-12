@@ -915,14 +915,23 @@ ul { list-style: none; }
     transition: transform 0.3s ease;
 }
 
+
 .faq__answer {
+    display: none;
     margin-top: 16px;
     font-size: 15px;
     color: #647B8A;
     line-height: 1.6;
-    /* En un futuro se puede animar el alto, de momento lo dejamos visible pero estático */
-    /* display: none; */ 
 }
+
+.faq__item.active .faq__answer {
+    display: block;
+}
+
+.faq__item.active .faq__icon {
+    transform: rotate(180deg);
+}
+
 
 /* ============ CTA FINAL ============ */
 .cta-final {
