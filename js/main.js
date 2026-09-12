@@ -82,19 +82,22 @@ document.querySelectorAll('.team__member button.btn-cta, .beneficios__btn-wrap b
 document.querySelectorAll('.faq__item').forEach(function(item) {
     item.addEventListener('click', function() {
         const isOpen = item.classList.contains('active');
-        // Close others
+        
+        // Close all other items for a clean single-open accordion feel
         document.querySelectorAll('.faq__item').forEach(function(other) {
-            other.classList.remove('active');
-            const icon = other.querySelector('.faq__icon');
-            if (icon) icon.textContent = '+';
+            if (other !== item) {
+                other.classList.remove('active');
+            }
         });
-        if (!isOpen) {
-            item.classList.add('active');
-            const icon = item.querySelector('.faq__icon');
-            if (icon) icon.textContent = '−';
-        }
+        
+        // Toggle clicked item
+        item.classList.toggle('active', !isOpen);
+        
+        // Update sticky parallax section heights during and after animation
         if (typeof updateStackingTops === 'function') {
             updateStackingTops();
+            setTimeout(updateStackingTops, 200);
+            setTimeout(updateStackingTops, 400);
         }
     });
 });
