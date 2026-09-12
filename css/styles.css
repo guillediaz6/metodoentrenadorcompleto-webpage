@@ -887,19 +887,41 @@ ul { list-style: none; }
     padding: 22px 24px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     user-select: none;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Cinta lateral decorativa */
+.faq__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #44A4DC;
+    transform: scaleY(0);
+    transform-origin: center;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq__item.active::before {
+    transform: scaleY(1);
 }
 
 .faq__item:hover {
     border-color: rgba(68, 164, 220, 0.4);
-    box-shadow: 0 8px 24px rgba(68, 164, 220, 0.08);
-    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(68, 164, 220, 0.08);
+    transform: translateY(-3px);
 }
 
 .faq__item.active {
     border-color: #44A4DC;
-    box-shadow: 0 10px 28px rgba(68, 164, 220, 0.15);
+    box-shadow: 0 16px 40px rgba(68, 164, 220, 0.12);
+    background: linear-gradient(to right, #faffff, #ffffff);
+    transform: translateY(-4px);
 }
 
 .faq__question {
@@ -907,6 +929,8 @@ ul { list-style: none; }
     justify-content: space-between;
     align-items: center;
     gap: 16px;
+    position: relative;
+    z-index: 2;
 }
 
 .faq__question h3 {
@@ -923,10 +947,10 @@ ul { list-style: none; }
 }
 
 .faq__icon {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 400;
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     background: rgba(68, 164, 220, 0.08);
     color: #44A4DC;
@@ -934,25 +958,29 @@ ul { list-style: none; }
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease, color 0.3s ease;
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .faq__item:hover .faq__icon {
     background: rgba(68, 164, 220, 0.15);
+    transform: scale(1.05);
 }
 
 .faq__item.active .faq__icon {
-    transform: rotate(45deg);
+    /* 135deg forma una X igual que 45deg, pero gira más dando un efecto espectacular */
+    transform: rotate(135deg) scale(1.15);
     background: #44A4DC;
     color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(68, 164, 220, 0.3);
 }
 
 .faq__answer {
     display: grid;
     grid-template-rows: 0fr;
-    transition: grid-template-rows 0.38s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, margin-top 0.38s cubic-bezier(0.16, 1, 0.3, 1);
-    opacity: 0;
+    transition: grid-template-rows 0.4s cubic-bezier(0.16, 1, 0.3, 1), margin-top 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     margin-top: 0;
+    position: relative;
+    z-index: 2;
 }
 
 .faq__answer p {
@@ -961,13 +989,16 @@ ul { list-style: none; }
     font-size: 15px;
     color: #556977;
     line-height: 1.65;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .faq__item.active .faq__answer {
     grid-template-rows: 1fr;
-    opacity: 1;
     margin-top: 14px;
 }
+
 /* ============ CTA FINAL ============ */
 .cta-final {
     background: #010203;
@@ -1673,4 +1704,10 @@ a.v2-cta:focus-visible {
 .hero__title span {
     font-style: italic;
     color: #e2e8f0; /* un gris perla muy elegante */
+}
+
+.faq__item.active .faq__answer p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.1s;
 }
