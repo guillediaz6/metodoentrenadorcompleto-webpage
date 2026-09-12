@@ -990,7 +990,7 @@ ul { list-style: none; }
     color: #556977;
     line-height: 1.65;
     opacity: 0;
-    transform: translateY(-8px);
+    transform: translateX(-20px);
     transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -1377,7 +1377,7 @@ ul { list-style: none; }
 /* ============ ANIMATIONS ============ */
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
 /* Scroll-triggered animations */
@@ -1389,7 +1389,7 @@ ul { list-style: none; }
 
 .reveal.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 /* ============ RESPONSIVE ============ */
@@ -1708,6 +1708,6 @@ a.v2-cta:focus-visible {
 
 .faq__item.active .faq__answer p {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
     transition-delay: 0.1s;
 }
