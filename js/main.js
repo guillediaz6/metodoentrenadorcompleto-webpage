@@ -26,6 +26,15 @@ if (hamburger) {
 }
 
 
+
+// ============ DEBOUNCE UTILITY ============
+function debounce(fn, ms) {
+    let timer;
+    return function() {
+        clearTimeout(timer);
+        timer = setTimeout(fn, ms);
+    };
+}
 // ============ STACKING CARDS: dynamic sticky top ============
 function updateStackingTops() {
     const sections = document.querySelectorAll('.stacking-section');
@@ -49,7 +58,7 @@ function updateStackingTops() {
 updateStackingTops();
 
 // Run when window resizes
-window.addEventListener('resize', updateStackingTops);
+window.addEventListener('resize', debounce(updateStackingTops, 150));
 
 // Run when all images and resources finish loading (crucial for correct height calculation)
 window.addEventListener('load', updateStackingTops);
@@ -58,3 +67,13 @@ window.addEventListener('load', updateStackingTops);
 setTimeout(updateStackingTops, 500);
 setTimeout(updateStackingTops, 1500);
 setTimeout(updateStackingTops, 3000);
+
+// ============ TOGGLE INFO PANELS ============
+document.querySelectorAll('.team__member button.btn-cta, .beneficios__btn-wrap button.btn-cta').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        var info = this.nextElementSibling;
+        if (info && info.classList.contains('team__member-info')) {
+            info.style.display = info.style.display === 'block' ? 'none' : 'block';
+        }
+    });
+});
