@@ -278,8 +278,9 @@ ul { list-style: none; }
 
 .video-preview {
     position: relative;
-    transform: translateY(-50%);
-    width: 560px;
+    transform: translateY(-38%);
+    width: 650px;
+    max-width: 92vw;
     aspect-ratio: 16 / 9;
     border-radius: 16px;
     overflow: hidden;
