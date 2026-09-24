@@ -265,7 +265,7 @@ ul { list-style: none; }
     padding: 0 24px;
 }
 
-/* ============ VIDEO PLACEHOLDER ============ */
+/* ============ VIDEO PLAYER ============ */
 .video-section {
     position: relative;
     z-index: 10;
@@ -274,95 +274,36 @@ ul { list-style: none; }
     align-items: flex-start;
     height: 0;
     overflow: visible;
+    padding: 0 20px;
 }
 
 .video-preview {
     position: relative;
     transform: translateY(-50%);
-    width: 560px;
-    aspect-ratio: 16 / 8;
+    width: 720px;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
     border-radius: 16px;
     overflow: hidden;
-    border: 2px solid rgba(70, 172, 55, 0.4);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8), 0 0 30px rgba(70, 172, 55, 0.15);
-    cursor: pointer;
-    background: var(--dark-card);
+    border: 2px solid rgba(68, 164, 220, 0.4);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 35px rgba(68, 164, 220, 0.2);
+    background: #000000;
 }
 
-.video-preview img {
+.video-preview video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.65);
-    transition: transform 0.5s ease, filter 0.5s ease;
+    display: block;
+    border-radius: 14px;
 }
 
-.video-preview:hover img {
-    transform: scale(1.03);
-    filter: brightness(0.8);
-}
-
-.video-preview__overlay {
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.6) 100%);
-}
-
-.video-preview__play-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: var(--green);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0 35px rgba(70, 172, 55, 0.7);
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.video-preview:hover .video-preview__play-btn {
-    transform: translate(-50%, -50%) scale(1.12);
-    background: #4ecc3c;
-    box-shadow: 0 0 50px rgba(70, 172, 55, 0.9);
-}
-
-.video-preview__play-btn svg {
-    width: 30px;
-    height: 30px;
-    fill: var(--white);
-    margin-left: 4px;
-}
-
-.video-preview__caption {
-    position: absolute;
-    bottom: 24px;
-    left: 28px;
-    z-index: 2;
-    text-align: left;
-}
-
-.video-preview__caption span {
-    display: inline-block;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--green);
-    background: rgba(13, 13, 13, 0.85);
-    padding: 4px 12px;
-    border-radius: 4px;
-    margin-bottom: 8px;
-}
-
-.video-preview__caption p {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--white);
-    text-shadow: 0 2px 8px rgba(0,0,0,0.9);
+@media (max-width: 768px) {
+    .video-preview {
+        width: 100%;
+        transform: translateY(-35%);
+        border-radius: 12px;
+    }
 }
 
 /* ============ HERO TEXT ============ */
