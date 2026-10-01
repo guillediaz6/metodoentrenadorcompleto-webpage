@@ -40,7 +40,7 @@
     <link rel="preload" as="image" href="assets/images/portada_opt.webp?v=12" fetchpriority="high">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css?v=12">
+    <link rel="stylesheet" href="css/styles.css?v=30">
 
     <!-- Structured Data: Organization -->
     <script type="application/ld+json">
@@ -173,7 +173,7 @@
                 <a href="#testimonios">Testimonios</a>
                 <a href="#faq">Resuelve tus dudas</a>
                 <a href="mailto:info@metododelentrenadorcompleto.com">Contáctanos</a>
-                <a href="#contacto" class="btn-cta btn-cta--dark">Empieza Ahora</a>
+                <a href="#contacto" class="btn-cta btn-cta--dark" onclick="openLeadFormModal()">Empieza Ahora</a>
             </nav>
 
             <div class="hamburger" id="hamburger">
@@ -500,7 +500,7 @@
                     </ul>
                 </div>
                 <div class="v2-card__bottom">
-                    <a href="mailto:info@metododelentrenadorcompleto.com?subject=Quiero%20el%20M%C3%A9todo%20del%20Entrenador%20Completo&body=Hola%20Tino%2C%0A%0AEstoy%20interesado%2Fa%20en%20adquirir%20la%20formaci%C3%B3n%20%22El%20M%C3%A9todo%20del%20Entrenador%20Completo%22%20y%20me%20gustar%C3%ADa%20recibir%20la%20informaci%C3%B3n%20para%20completar%20mi%20inscripci%C3%B3n.%0A%0ANombre%3A%0ATel%C3%A9fono%3A%0A%0A%C2%A1Muchas%20gracias!" class="v2-cta">Quiero el método</a>
+                    <button type="button" class="v2-cta open-form-modal" onclick="openLeadFormModal()">Quiero el método</button>
                 </div>
             </div>
         </div>
@@ -643,8 +643,59 @@
         </div>
     </footer>
 
+    <!-- ==================== FORM MODAL ==================== -->
+    <div class="form-modal" id="formModal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="form-modal__backdrop" id="formModalBackdrop" onclick="closeLeadFormModal()"></div>
+        <div class="form-modal__content">
+            <button type="button" class="form-modal__close" id="formModalClose" onclick="closeLeadFormModal()" aria-label="Cerrar formulario">&times;</button>
+            <div class="form-modal__iframe-wrapper">
+                <iframe
+                    src="https://api.leadconnectorhq.com/widget/form/yK5NRSpptp4bt5LUrewa"
+                    style="width:100%;height:100%;border:none;border-radius:8px"
+                    id="inline-yK5NRSpptp4bt5LUrewa" 
+                    data-layout="{'id':'INLINE'}"
+                    data-trigger-type="alwaysShow"
+                    data-trigger-value=""
+                    data-activation-type="alwaysActivated"
+                    data-activation-value=""
+                    data-deactivation-type="neverDeactivate"
+                    data-deactivation-value=""
+                    data-form-name="Form 1"
+                    data-height="1441"
+                    data-layout-iframe-id="inline-yK5NRSpptp4bt5LUrewa"
+                    data-form-id="yK5NRSpptp4bt5LUrewa"
+                    data-cookie-consent="true"
+                    data-cookie-consent-provider="auto"
+                    title="Form 1">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function openLeadFormModal(e) {
+        if (e && e.preventDefault) e.preventDefault();
+        var modal = document.getElementById('formModal');
+        if (modal) {
+            modal.classList.add('is-open');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+    function closeLeadFormModal(e) {
+        if (e && e.preventDefault) e.preventDefault();
+        var modal = document.getElementById('formModal');
+        if (modal) {
+            modal.classList.remove('is-open');
+            document.body.style.overflow = '';
+        }
+    }
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeLeadFormModal();
+    });
+    </script>
+
     <!-- Scripts -->
-    <script src="js/main.js?v=12" defer></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

@@ -101,3 +101,40 @@ document.querySelectorAll('.faq__item').forEach(function(item) {
         }
     });
 });
+
+// ============ FORM MODAL POPUP ============
+function openLeadFormModal(e) {
+    if (e && e.preventDefault) e.preventDefault();
+    const modal = document.getElementById('formModal');
+    if (modal) {
+        modal.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeLeadFormModal(e) {
+    if (e && e.preventDefault) e.preventDefault();
+    const modal = document.getElementById('formModal');
+    if (modal) {
+        modal.classList.remove('is-open');
+        document.body.style.overflow = '';
+    }
+}
+
+document.querySelectorAll('.open-form-modal').forEach(function(btn) {
+    btn.addEventListener('click', openLeadFormModal);
+});
+
+const formModalClose = document.getElementById('formModalClose');
+if (formModalClose) {
+    formModalClose.addEventListener('click', closeLeadFormModal);
+}
+
+const formModalBackdrop = document.getElementById('formModalBackdrop');
+if (formModalBackdrop) {
+    formModalBackdrop.addEventListener('click', closeLeadFormModal);
+}
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLeadFormModal();
+});
